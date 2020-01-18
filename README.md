@@ -28,3 +28,5 @@ Progress:
 2020.01.17.1115 - Initial commit.  Setup folder structure, and initialized the readme.  Researched random nuber generation in JavaScript.
 
 2020.01.17.2349 - Created logic and style sheets.  Linked index.html to Bootstrap CSS CDN, and my external style and logic sheets. Added initial comments to index.html for accessibility and to structure my plan. Created initial grid structure, with some remaining col work to complete.  Added Bootstrap initial CSS classes to main, header, and panel elements.  
+
+2020.01.18.0005 - For index.html, I completed the initial grid structure, and completed adding comments for accessibility.  

@@ -7,7 +7,8 @@
     <title>Password Generator</title>
     
     <!-- Link to Boostrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Link to external styles sheet -->
     <link rel = "stylesheet" type = "text/css" href = "assets/styles/style.css">
     <!-- Link to external logic sheet -->
@@ -28,47 +29,63 @@
         </div>
       </div>
       <!-- foreground elements for page, including subtitle and text-area containing two buttons -->
-      <!-- ** the panel and child elements will be in a middle column with a small column on each side -->
-      <!-- *** the first two child rows of the panel element will each follow a similar column pattern to the direct previous comment -->
+      <!-- '**'' the panel and child elements will be in a middle column with a small column on each side -->
+      <!-- '***' the first two child rows of the panel element will each follow a similar column pattern to the direct previous comment -->
+      <!-- '*4' the third child row of the panel element containing the buttons will be in the following column pattern, where the '4' columns are the buttons; '2-4-1-4-1' -->
       <div class = "row">
-        <!-- small left side column mentioned in ** comment -->
-        <div class = "col-1"></div>
+        <!-- small far left side column mentioned in ** comment -->
+        <div class = "col-md-1"></div>
         <!-- middle column mentioned in ** comment -->
-        <div class = "col-10">
+        <div class = "col-md-10">
           <div class = "panel bg-white">  
             <!-- row containing subtitle for panel child elements -->
             <div class = "row">
               <!-- small left side column mentioned in *** comment -->
-              <div class = "col-1"></div>
+              <div class = "col-md-1"></div>
               <!-- middle column mentioned in *** comment -->
-              <div class = "col-10">
+              <div class = "col-md-10">
                 <!-- subtitle -->   
                 <h2 class = "hdr text-secondary">Generate a Password</h2>
                 <hr>
                 <!-- text area containing two buttons -->
               </div>
               <!-- small right side column mentioned in *** comment -->
-              <div class = "col-1"></div>
+              <div class = "col-md-1"></div>
             </div>
             <div class = "row">
-              <div class = "col">
+              <!-- small left side column mentioned in *** comment -->
+              <div class = "col-md-1"></div>
+              <!-- middle column mentioned in *** comment -->
+              <div class = "col-md-10">
                 <textarea readonly class = "rounded" id = "password" placeholder = "Your Secure Password" aria-label = "Generated Password"></textarea>
                 <hr>
               </div>
+              <!-- small right side column mentioned in *** comment -->
+              <div class = "col-md-1"></div>
             </div>
             <div class = "row">
-              <div class = "col">
+              <!-- small left side column mentioned in *4 comment -->
+              <div class = "col-md-2"></div>
+              <!-- first button column mentioned in *4 comment -->
+              <div class = "col-md-4">
                 <!-- button that generates a random password when clicked, and prints the password into the above text-area -->
                 <button  class = "btn btn-lg btn-danger" id = "generate">Generate Password</button>
+              </div>
+              <!-- small middle column, inbetween the button columns, mentioned in *4 comment -->
+              <div class = "col-md-1"></div>
+              <!-- second button column mentioned in *4 comment -->
+              <div class = "col-md-4">
                 <!-- bonus; button that copies password that is currently displayed in the above text-area to the user's clipboard -->
                 <!-- this button will be greyed out when no password is displayed in the above text-area -->
                 <button  class = " btn btn-lg btn-secondary" id = "copy" disabled>Copy to Clipboard</button>
               </div>
+              <!-- small right side column mentioned in *4 comment -->
+              <div class = "col-md-1"></div>
             </div>
           </div>
         </div>
-        <!-- small right side column mentioned in ** comment -->
-        <div class = "col-1"></div>
+        <!-- small far right side column mentioned in ** comment -->
+        <div class = "col-md-1"></div>
       </div>
     </main>
   
