@@ -5,21 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+    
+    <!-- Link to Boostrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Link to external styles sheet -->
+    <link rel = "stylesheet" type = "text/css" href = "assets/styles/style.css">
+    <!-- Link to external logic sheet -->
+    <script src = "assets/logic/logic.js"></script>
+
   </head>
-  <body>
-    <header>
-      <h1>Password Generator</h1>
-    </header>
-    <h2>Generate a Password</h2>
-    <textarea
-      readonly
-      id="password"
-      placeholder="Your Secure Password"
-      aria-label="Generated Password"
-    ></textarea>
-    <button id="generate">Generate Password</button>
-    <button id="copy">
-      Copy to Clipboard
-    </button>
+  <body class = "bg-light">
+    
+    <!-- container wrapper for main body elements -->
+    <main class = "container">
+      <!-- page header centered above the foreground content containing main page title -->
+      <div class = "row">
+        <div class = "col">
+          <header class = "page-header">
+            <!-- main page title -->
+            <h1 class = "hdr text-secondary text-center">Password Generator</h1>
+          </header>
+        </div>
+      </div>
+      <!-- foreground elements for page, including subtitle and text-area containing two buttons -->
+      <!-- ** the panel and child elements will be in a middle column with a small column on each side -->
+      <!-- *** the first two child rows of the panel element will each follow a similar column pattern to the direct previous comment -->
+      <div class = "row">
+        <!-- small left side column mentioned in ** comment -->
+        <div class = "col-1"></div>
+        <!-- middle column mentioned in ** comment -->
+        <div class = "col-10">
+          <div class = "panel bg-white">  
+            <!-- row containing subtitle for panel child elements -->
+            <div class = "row">
+              <!-- small left side column mentioned in *** comment -->
+              <div class = "col-1"></div>
+              <!-- middle column mentioned in *** comment -->
+              <div class = "col-10">
+                <!-- subtitle -->   
+                <h2 class = "hdr text-secondary">Generate a Password</h2>
+                <hr>
+                <!-- text area containing two buttons -->
+              </div>
+              <!-- small right side column mentioned in *** comment -->
+              <div class = "col-1"></div>
+            </div>
+            <div class = "row">
+              <div class = "col">
+                <textarea readonly class = "rounded" id = "password" placeholder = "Your Secure Password" aria-label = "Generated Password"></textarea>
+                <hr>
+              </div>
+            </div>
+            <div class = "row">
+              <div class = "col">
+                <!-- button that generates a random password when clicked, and prints the password into the above text-area -->
+                <button  class = "btn btn-lg btn-danger" id = "generate">Generate Password</button>
+                <!-- bonus; button that copies password that is currently displayed in the above text-area to the user's clipboard -->
+                <!-- this button will be greyed out when no password is displayed in the above text-area -->
+                <button  class = " btn btn-lg btn-secondary" id = "copy" disabled>Copy to Clipboard</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- small right side column mentioned in ** comment -->
+        <div class = "col-1"></div>
+      </div>
+    </main>
+  
   </body>
 </html>
