@@ -2,6 +2,7 @@
 //VARIABLES
     //text-area
     var display = "";
+    var displayCopy = "";
 
     //buttons
     var btnGen = "";
@@ -33,5 +34,6 @@
     
 
     //when user clicks the "Copy to Keyboard" button.
-    //the password that is currently displayed in the text-area is copied to the users keyboard.
+    //the password that is currently displayed in the text-area is stored to a string.
+    //that string is copied to the users keyboard.
     //return
