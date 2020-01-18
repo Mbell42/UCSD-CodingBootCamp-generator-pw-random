@@ -32,3 +32,5 @@ Progress:
 2020.01.18.0005 - For index.html, I completed the initial grid structure, and completed adding comments for accessibility.  
 
 2020.01.18.0022 - For index.html, I made minor updates to the column layout of the row containing the buttons.  I also fixed a couple bootstrap CSS classes that had the incorrect syntax.
+
+2020.01.18.0045 - For logic.js, I added initial comments to structure my plan and for acessibility.  I then created variables for the text-area, the two buttons, and a variable that will contain an array, assinging them each an initial undefined value.
