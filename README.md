@@ -30,3 +30,5 @@ Progress:
 2020.01.17.2349 - Created logic and style sheets.  Linked index.html to Bootstrap CSS CDN, and my external style and logic sheets. Added initial comments to index.html for accessibility and to structure my plan. Created initial grid structure, with some remaining col work to complete.  Added Bootstrap initial CSS classes to main, header, and panel elements.  
 
 2020.01.18.0005 - For index.html, I completed the initial grid structure, and completed adding comments for accessibility.  
+
+2020.01.18.0022 - For index.html, I made minor updates to the column layout of the row containing the buttons.  I also fixed a couple bootstrap CSS classes that had the incorrect syntax.
