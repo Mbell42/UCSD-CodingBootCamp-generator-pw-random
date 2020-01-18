@@ -36,3 +36,5 @@ Progress:
 2020.01.18.0045 - For logic.js, I added initial comments to structure my plan and for acessibility.  I then created variables for the text-area, the two buttons, and a variable that will contain an array, assinging them each an initial undefined value.
 
 2020.01.18.1544 - For logic.js, I added more comments to structure plan and for accessibility.  I also added a variable for turning the generated password into a string.
+
+2020.01.18.1558 - For logic.js, I completed adding comments to structure plan and for accessibility.  I also added values to variables that are hooking into HTML elements.
