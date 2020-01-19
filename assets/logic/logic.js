@@ -1,5 +1,6 @@
 //check to see if external style sheet is linked correctly
     console.log("logic.js is linked");
+//CURRENTLY NOT USED
 
 //VARIABLES
       //text-area
