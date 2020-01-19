@@ -14,37 +14,49 @@
 
 
 //FUNCTIONS
-    //when user clicks the "Generate a Password" button,
+    //once document is ready, 
+    $(document).ready(function() {
 
-    //a random password is generated, consisting of 9 upper and lower case alphanumeric characters
-        //to create the random password, 9 random upper and lower case alphanumeric charaters are generated
-        
-        //the 9 random upper and lower case alphanumeric charaters are put into a variable array
-        
-        //the contents of the array are then appended together into a string
-        
-        //the appended string is displayed in the text area
-        
-        //the variable containing the array is then set to null
-        
-        //return
+        //when user clicks the "Generate a Password" button,
+        $(btnGen).on("click", function() {
+            alert("I've been clicked!");
+          });
+    
+        });
+
+            //a random password is generated, consisting of 9 upper and lower case alphanumeric characters
+                //to create the random password, 9 random upper and lower case alphanumeric charaters are generated
+                
+                //the 9 random upper and lower case alphanumeric charaters are put into a variable array
+                
+                //the contents of the array are then appended together into a string
+                
+                //the appended string is displayed in the text area
+                
+                //the variable containing the array is then set to null
+                
+                //return
 
 
 
-    //when user clicks the "Copy to Clipboard" button,
+        //when user clicks the "Copy to Clipboard" button,
 
-        //IF there IS a password currently displayed in the text-area
-        
-            //the "Copy to Keyboard" button is no longer greyed out, and is enaled
+            //IF there IS a password currently displayed in the text-area
+            
+                //the "Copy to Keyboard" button is no longer greyed out, and is enaled
 
-            //ELSE (NO password currently displayed in the text-area)
-        
-                //the "Copy to Keyboard" button is greyed out and disabled
+                //ELSE (NO password currently displayed in the text-area)
+            
+                    //the "Copy to Keyboard" button is greyed out and disabled
 
-        //then the password that is currently displayed in the text-area is stored to a variable containing a string
-        
-        //that string is copied to the users keyboard
-        
-        //the variable containing the string  is then set to null
-        
-        //return
+            //then the password that is currently displayed in the text-area is stored to a variable containing a string
+            
+            //that string is copied to the users keyboard
+            
+            //the variable containing the string  is then set to null
+            
+            //return
+
+
+
+    

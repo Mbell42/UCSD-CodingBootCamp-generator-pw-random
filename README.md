@@ -38,3 +38,5 @@ Progress:
 2020.01.18.1544 - For logic.js, I added more comments to structure plan and for accessibility.  I also added a variable for turning the generated password into a string.
 
 2020.01.18.1558 - For logic.js, I completed adding comments to structure plan and for accessibility.  I also added values to variables that are hooking into HTML elements.
+
+2020.01.18.1906 - For logic.js, I commented out everything, as I was having trouble getting a button to respond to a click, so i migrated the code to the index.html file to cut down  potential issues.  Had trouble getting jquery to work.
