@@ -72,28 +72,28 @@
               <!-- small right side column mentioned in *** comment -->
               <div class = "col-md-1"></div>
             </div>
-            <div class = "row">
-              <!-- small left side column mentioned in *4 comment -->
-              <div class = "col-md-2"></div>
-              
-              <!-- first button column mentioned in *4 comment -->
-              <div class = "col-md-3">
-                <!-- button that generates a random password when clicked, and prints the password into the above text-area -->
-                <button class = "btn btn-lg btn-danger" id = "generate">Generate Password</button>
-              </div>
-              
-              <!-- small middle column, inbetween the button columns, mentioned in *4 comment -->
-              <div class = "col-md-2"></div>
-              
-              <!-- second button column mentioned in *4 comment -->
-              <div class = "col-md-3">
-                <!-- bonus; button that copies password that is currently displayed in the above text-area to the user's clipboard -->
-                <!-- this button will be greyed out when no password is displayed in the above text-area -->
-                <button  class = " btn btn-lg btn-secondary" id = "copy" disabled>Copy to Clipboard</button>
-              </div>
-              
-              <!-- small right side column mentioned in *4 comment -->
-              <div class = "col-md-2"></div>
+            <div class = "row buttons">
+                <!-- small left side column mentioned in *4 comment -->
+                <div class = "col-md-2"></div>
+                
+                <!-- first button column mentioned in *4 comment -->
+                <div class = "col-md-3">
+                  <!-- button that generates a random password when clicked, and prints the password into the above text-area -->
+                  <button type = "button" class = "btn btn-lg btn-danger" id = "generate" value = "inactive">Generate Password</button>
+                </div>
+                
+                <!-- small middle column, inbetween the button columns, mentioned in *4 comment -->
+                <div class = "col-md-2"></div>
+                
+                <!-- second button column mentioned in *4 comment -->
+                <div class = "col-md-3">
+                  <!-- bonus; button that copies password that is currently displayed in the above text-area to the user's clipboard -->
+                  <!-- this button will be greyed out when no password is displayed in the above text-area -->
+                  <button type = "button" class = " btn btn-lg btn-secondary" id = "copy" value = "inactive" disabled>Copy to Clipboard</button>
+                </div>
+                
+                <!-- small right side column mentioned in *4 comment -->
+                <div class = "col-md-2"></div> 
             </div>
           </div>
         </div>
@@ -107,41 +107,56 @@
       //VARIABLES
     //text-area
     var passWord = document.getElementById("#password");
-    var pwCopy = null;
+    var pwCopy = "";
 
     //buttons
     var btnGen = document.getElementById("#generate");
     var btnCopy = document.getElementById("#copy");
 
     //array
-    var alphaNumArray = null;
+    var alphaNumArray = "";
 
-
+    var buttonArea = document.querySelector(".buttons");
 
 //FUNCTIONS
     //once document is ready, 
     // unable to get jquery to work - $(document).ready(function() {
 
         //when user clicks the "Generate a Password" button,
-        // unable to get jquery to work -  $(btnGen).on("click", function() {
-        // unable to get jquery to work -      alert("I've been clicked!");
-        // unable to get jquery to work -    });
-    
-        // unable to get jquery to work -  });
-        function myFunction() {
-        btnGen.addEventListener("click", function(event) {
-          console.log(event);
-          if (btnGen.class === "btn btn-lg btn-danger") {
-            btnGen.setAttribute("class", "btn btn-lg btn-success");
+              // unable to get jquery to work -  $(btnGen).on("click", function() {
+              // unable to get jquery to work -      alert("I've been clicked!");
+              // unable to get jquery to work -    });
+          
+              // unable to get jquery to work -  }); 
 
-          };
-        });
-      };
+buttonArea.addEventListener("click", function(event) {
+  var element = event.target;
+
+  if (element.matches(btnGen)) {
+    var state = element.getAttribute("value");
+    console.log(state);
+
+    if (state === "inactive") {
+      generatePassword();
+      element.setAttribute("value","active");
+      console.log(state);
+    };
+  };
+});
 
 
             //a random password is generated, consisting of 9 upper and lower case alphanumeric characters
                 //to create the random password, 9 random upper and lower case alphanumeric charaters are generated
-                
+                //I researched methods of this on stackOverflow.  This random password generator function is based and repurposed from a solution at "https://stackoverflow.com/questions/1497481/javascript-password-generator"              
+                function generatePassword() {
+                  var length = 9;
+                  var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                  var newPW = "";
+                  for (var i = 0, l = charset.length; i < length; ++i) {
+                    newPW += charset.charAt(Math.floor(Math.random() *l));
+                  };
+                  return newPW;
+                };
                 //the 9 random upper and lower case alphanumeric charaters are put into a variable array
                 
                 //the contents of the array are then appended together into a string
