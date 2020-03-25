@@ -49,5 +49,4 @@ Progress:
 
 2020.03.25.0815 - For 'logic.js', I added created copyPW function, generateBtnand copyBtn click processes.  I then tested the functions and made slight adjustments.
 
-2020.03.25.0959 - For 'logic.js', I added removed copyPW function, and cleaned up file.  For 'index.html', I added a an onClick function to the copy button, and a script section to handle the
-copy button click event.
+2020.03.25.1000 - For 'logic.js', I added removed copyPW function, and cleaned up file.  For 'index.html', I added a an onClick function to the copy button, and a script section to handle the copy button click event.
