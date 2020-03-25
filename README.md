@@ -46,3 +46,5 @@ Progress:
 2020.01.18.2342 - For index.html, style.css, and logic.js; I reattached the link to external logic sheet and migrated latest javascript code bac over to logic.js.  Updated local variable newPW to be global variable and applied minor fixes to code structure. Added check to beginning of logic.js to ensure that it is inked properly a console log. Added styles to mainPanel and textarea sections of page in style.css.
 
 2020.03.25.0720 - For 'logic.js', I removed previous broken code and began anew.  I set up Processess and Functions sections, and created generatePW() function using a charset and a forloop that randomly selects from the charset and appends that selection to an empty string variable until a set length has been achieved.
+
+2020.03.25.0815 - For 'logic.js', I added created copyPW() function, generateBtnand copyBtn click processes.  I then tested the functions and made slight adjustments.
