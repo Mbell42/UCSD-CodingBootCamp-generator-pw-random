@@ -56,6 +56,7 @@
                 <!-- subtitle -->   
                 <h2 class = "hdr text-muted text-center">Generate a Password</h2>
                 <hr>
+                <h5 id = "paste"></h5>
                 <!-- text area containing two buttons -->
               </div>
               <!-- small right side column mentioned in *** comment -->
@@ -89,7 +90,7 @@
                 <div class = "col-md-3">
                   <!-- bonus; button that copies password that is currently displayed in the above text-area to the user's clipboard -->
                   <!-- this button will be greyed out when no password is displayed in the above text-area -->
-                  <button type = "button" class = " btn btn-lg btn-secondary" id = "copy" value = "inactive">Copy to Clipboard</button>
+                  <button type = "button" class = " btn btn-lg btn-secondary" id = "copy" onClick = "copyPw()" value = "inactive">Copy to Clipboard</button>
                 </div>
                 
                 <!-- small right side column mentioned in *4 comment -->
@@ -102,5 +103,22 @@
         <div class = "col-md-1"></div>
       </div>
     </main>
+    <script>
+      // Copy generated password to clipboard 
+     const copyPw = () => {
+       const copyField = $("#passwordDisplay");
+       // Check if copyField is blank
+       // Select contents of copyField
+       $(copyField).select();
+       // // Set selection range -- for mobile devices
+       // $(pwContent).setSelectionRange(0, 99999);
+       // Copy selection
+       document.execCommand("copy");
+       // console.log(navigator.clipboard.readText());
+       
+       // Alert user that new password has successfully been copied
+       alert("New password has been copied to clipboard!");   
+   };
+   </script>
   </body>
 </html>
