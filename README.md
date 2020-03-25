@@ -47,7 +47,7 @@ Progress:
 
 2020.03.25.0720 - For 'logic.js', I removed previous broken code and began anew.  I set up Processess and Functions sections, and created generatePW() function using a charset and a forloop that randomly selects from the charset and appends that selection to an empty string variable until a set length has been achieved.
 
-2020.03.25.0815 - For 'logic.js', I added created copyPW() function, generateBtnand copyBtn click processes.  I then tested the functions and made slight adjustments.
+2020.03.25.0815 - For 'logic.js', I added created copyPW function, generateBtnand copyBtn click processes.  I then tested the functions and made slight adjustments.
 
-2020.03.25.0959 - For 'logic.js', I added removed copyPW() function, and cleaned up file.  For 'index.html', I added a an onClick function to the copy button, and a script section to handle the
+2020.03.25.0959 - For 'logic.js', I added removed copyPW function, and cleaned up file.  For 'index.html', I added a an onClick function to the copy button, and a script section to handle the
 copy button click event.
