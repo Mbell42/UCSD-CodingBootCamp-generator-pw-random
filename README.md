@@ -1,4 +1,4 @@
-# generator-pw-random
+# UCSD-CodingBootCamp Generator PW Random
 Homework #3, Random Password Generator.
 
 
